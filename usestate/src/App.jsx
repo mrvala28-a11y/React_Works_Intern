@@ -1,38 +1,41 @@
 import { useState } from "react"
+import AddUser from "./Components/AddUser"
 
 
 function App() {
 
-    const [Number, setNumber] = useState(0);
-    ///usesatet no use : variablble karava 
-    // number ==> read only value ( no chnage no thaai)
-    //  setnumber ==> write only value ( number ni valur chnage karishu,)
+    // const [Number, setNumber] = useState(0);
+    // ///usesatet no use : variablble karava 
+    // // number ==> read only value ( no chnage no thaai)
+    // //  setnumber ==> write only value ( number ni valur chnage karishu,)
 
-    console.log(Number)
-    function IncreaseNum() {
-        setNumber(Number + 1);
-    }
-    function DecreaseNum() {
+    // console.log(Number)
+    // function IncreaseNum() {
+    //     setNumber(Number + 1);
+    // }
+    // function DecreaseNum() {
 
-        if (Number !== 0) return setNumber(Number - 1);
-    }
-    // selft task :- 
-    // number not be minnesed  .
-    // jump = 5 value incress to 5 number .
+    //     if (Number !== 0) return setNumber(Number - 1);
+    // }
+    // // selft task :- 
+    // // number not be minnesed  .
+    // // jump = 5 value incress to 5 number .
 
-    function Jumpincrease() {
-        setNumber(Number + 5);
+    // function Jumpincrease() {
+    //     setNumber(Number + 5);
 
-    }
-    // decrease jumm 5 ==> decrease valuse to 5 number .
-    function Jumpdecrease() {
-        if (Number !== 0) return setNumber(Number - 5);
-    }
-    // create a Reset button valuse .
-    function Reset() {
-        setNumber(0);
-    }
+    // }
+    // // decrease jumm 5 ==> decrease valuse to 5 number .
+    // function Jumpdecrease() {
+    //     if (Number !== 0) return setNumber(Number - 5);
+    // }
+    // // create a Reset button valuse .
+    // function Reset() {
+    //     setNumber(0);
+    // }
 
+
+//-----------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -40,7 +43,7 @@ function App() {
 
     return (
         <>
-            <section className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white flex flex-col items-center justify-center">
+            {/* <section className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white flex flex-col items-center justify-center">
 
                 <h1 className="text-4xl text-center font-extrabold mb-4 tracking-wide">
                     useState = Change value of variable
@@ -50,12 +53,11 @@ function App() {
                     Increase & Decrease Counter
                 </p>
 
-                {/* Counter Box */}
                 <div className="w-[320px] h-[220px] bg-[#1e1e1e] rounded-2xl shadow-2xl flex items-center justify-center text-[120px] font-extrabold text-amber-400 border border-gray-700">
                     {Number}
                 </div>
 
-                {/* Buttons */}
+            
                 <div className="flex flex-wrap justify-center gap-5 mt-10 max-w-[900px]">
 
                     <button
@@ -95,7 +97,9 @@ function App() {
 
                 </div>
 
-            </section>
+            </section> */}
+
+            <AddUser/>
         </>
     )
 }
